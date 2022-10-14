@@ -1,0 +1,23 @@
+Observer Design Pattern
+--------------------------
+1. Using observer design pattern we can notify multiple objects whenever an object changes state.
+So we are going to have an single object whenever the state of this single object is changes it is going
+out and notify multiple objects that state changes has happened.
+And the objects which are interested knowing about this state changes are called as observers.
+So they are observing our object for any state changes that's why the name of the desing pattern is
+observer design pattern
+
+2. This desing pattern is also called as publisher-subscriber or pub-sub
+
+The resign behind that we have a single object which is going to publish whenever its state changes occures
+and there will be multiple observers who are subscribed to this object and they will to get notification
+when ever publisher or observable changes its state.
+
+3. we are defining one-to-many dependency between objects, where many object are listening for state change
+of a single object, without tightly coupling all of them together.
+
+4. This pattern is often implemented where listener only gets notifications that "something" has changed in the object's
+state. Listener query back to find out more information if needed. This makes it more generic as different listeners
+may be interested in different states.
+
+But this is just guidelines we can send a value to listeners as our requirement.

@@ -1,0 +1,77 @@
+Streams:
+------------
+
+Declarative
+Flexible
+Parallelizable
+
+How?
+
+1. The streams take the data from source
+2. Do all the processing
+3. Return the data into the container the users wants or just consumes the data
+
+ stream pipeline
+ ------------------
+
+        A stream piple consists of
+        1. Source from which we generate the stream such as collection and array or generated function or
+           IO channel
+        2. followed by Zero or more Intermediate operations : These are the operations that are applied on a
+           Stream and the return the another stream followed by
+        3. Terminal operations produces the result or side effect from the stream
+           Side effect is anything other then returning the result such as print statement
+
+ Terminal Op : So basically terminal operations prodcues the non stream
+                                                results such as premetive value a collection or no valuse at all
+                                                it also the reason it can not be change further
+
+ Once you opearate on the stream it becomes empty. So stream is immutalbe and we can use it only once.
+ we neither can add anything to existing stream nor we can remove anything from it.
+ the most we can do it to read the elements from it once operate on each element and return a new stream
+ So stream is just lik a facny iterator it is not something like a collection which stores the data in it.
+
+ Higher Order Functions
+ ---------------------
+ Functional programming languages provide several usefull Higher order functions:
+ A function that takes one or more functions or returns a function or does both is a Higher Order Function
+ Most common Higher Order Functions are
+ 1. Filer
+ 2. Map
+ 3. Reduce
+
+ Filter Method:
+ you can think of as this meshod as
+ filter() - functional equivalent of if statement
+           It takes a Predicate. Predicate has a method boolean test(T t)
+
+ This lambda or Predicate will be executed on each stream element. The stream element for which this test() method
+ or predicate return true. A new stream containing only those elements is return from this filter() method.
+
+
+ Lazy
+ -------
+ All the intermediate operations  on Streams are Lazy
+
+  this is how streams are lazy. Stream pipe line gets triggered only when the terminal operations are applied.
+   and Terminal operation on stream are eager it execute the complete pipeline right at time apply it.
+    so always remember intermediate operation on streams are lozy and terminal operations are eager.
+
+ other then the streams Java has three premetive streams
+ 1. IntStream
+ 2. LongStream
+ 3. DoubleStream
+
+
+Stateless Operations
+----------------------
+ Do not need any kind of outside information.
+
+Statefull Operations
+--------------------
+Use outside information.
+
+Common Fork-Join Pool
+----------------------
+    used by all parallel stream operations!
+    Takes all avaialble processors by default.

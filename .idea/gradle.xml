@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -8,12 +9,18 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Algorithms" />
+            <option value="$PROJECT_DIR$/Codility" />
+            <option value="$PROJECT_DIR$/Functional_Programming" />
+            <option value="$PROJECT_DIR$/Optional_practices" />
             <option value="$PROJECT_DIR$/advanceref" />
             <option value="$PROJECT_DIR$/annotations" />
             <option value="$PROJECT_DIR$/basicref" />
             <option value="$PROJECT_DIR$/design_patterns" />
-            <option value="$PROJECT_DIR$/functional_programming" />
             <option value="$PROJECT_DIR$/java_collection" />
+            <option value="$PROJECT_DIR$/lamdas" />
+            <option value="$PROJECT_DIR$/reactive_programming" />
+            <option value="$PROJECT_DIR$/streams" />
           </set>
         </option>
       </GradleProjectSettings>

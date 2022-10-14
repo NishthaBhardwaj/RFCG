@@ -1,0 +1,37 @@
+1. RXJava works on PUSH rather than pull.
+2. Different channels for different signals
+3. RxJava can compose Events by operators
+4. RxJava uses schedulers
+5. BackPressure using Flowable
+
+
+RxJava3.x
+        ReactiveX by Netflix
+         Observer Design Pattern
+             Observable and Observer
+
+As RxJava getting popular java came with standard called Reactive Stream
+   Reactive Streams are set of interface
+   and java says that if the api implements these interfaces and the TCK
+      1. Interface
+             Flowable instead of Obserable
+      2. Reactive Stream Technology Compatibility Kit(TCK)
+
+     The api become compatible and reactive
+     This api uses Flowable instead of Observable
+
+   RXJava was there even before reactive stream specification came. It uses Observable but it also implemented
+   Flowable to make itself
+   java9 also implement TCK and having Flowable API reactive programming
+
+   java9 - Flowable
+
+   YOu know what RXJava and java9 flowable interoperable means if you are using RXjava latest version you can replace
+   it with java9  flowable. and Java9  Flowable to RXJava.
+   There are many reactive API available for eg you can use Reactor Core as weli. So you can use any implementation
+   of TCK that you like.
+   and Note that only differnece b/w Flowable and RXJava very own obserable that Flowable is backpressure ready
+   and Obserable is not but RXJava also implements Reacitve streams from RXJava2.x onwards. So that is not the point
+   of cerncern here
+
+

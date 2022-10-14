@@ -1,0 +1,28 @@
+Functional Programming
+-----------------------
+
+Functional Prgramming is a programming peradiam in which we have each and every thing in form of
+Pure Methemetical Functions
+in imperative programming or say in object oriented programming we play with the obejct state
+we can pass the object to the method we can get object from the method with modified state os in OOPS
+we generally do modify the outer envirorment. Think about pure methemetical funation shoud behave how pure mathemitical
+function will behave a pure methemetical funations job would only to perform calculation on the basis of provide
+algorithms and data nothing more then that. It should not have any effect on the outer enviroment.
+It should have any to do with the object state it just provide the data to perfomr the operation
+This funcation programming ovoid the changing state and mutable data.
+It is the Declarative type of programming
+what to solve rather then how to solve
+
+
+-------------------------
+There are three key concepts of functional programming
+
+1. Functions as first class citizens
+2. Pure functions
+3. Higher order functions
+
+other than these three key concepts some other important concepts related to FP(Functional Programming)
+and these are:
+
+No Side Effects
+Referencial Transparency
